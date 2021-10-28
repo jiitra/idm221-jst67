@@ -1,4 +1,24 @@
 /* NEVER REPEAT CODE!! */
+/* 
+#393424 dark
+#5B9279 emerald green
+#62466B purple
+#EFA9AE pink
+*/
 body{
-    background-color:linen;
+    background-color: #F0F7EE;
+}
+.uxid{
+    display: grid;
+    grid-template-columns: fit-content(10%);
+    grid-template-columns: 1fr 1fr;
+    
+}
+.graphic-design{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.graphic-design img{
+    height:100%;
+    overflow: hidden;
 }
