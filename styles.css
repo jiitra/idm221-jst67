@@ -1,24 +1,156 @@
-/* NEVER REPEAT CODE!! */
 /* 
+notes:
+try not to repeat code
+
+#F0F7EE background
 #393424 dark
 #5B9279 emerald green
 #62466B purple
 #EFA9AE pink
+
+
+rem calculation: desired px value / root px value 
+
 */
+@import './fonts.css';
 body{
     background-color: #F0F7EE;
+    font-family: 'Courier New', Courier, monospace;
+    color: #393424;
+    font-size: 1rem; /*16px*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Coolvetica Rg', Helvetica, Arial, sans-serif;
+    color: #393424;
+}
+
+h2{
+    font-size: 3.125rem; /*50px*/
+}
+
+h3{
+    font-size: 2.18rem; /*35px*/
+    letter-spacing: .04rem;
 }
 .uxid{
     display: grid;
     grid-template-columns: fit-content(10%);
     grid-template-columns: 1fr 1fr;
+    gap:4.375rem; /*70px*/
     
 }
+.uxid ul{
+    list-style-type: none;
+    display:list-item;
+    font-size: 2.18rem; /*35px*/
+    line-height: 3.5rem;
+   /* margin: 0;*/
+}
+
+.uxid img{
+    width: 53.125rem; /*850px*/
+}
+.uxid img:hover{
+    /* ( offset-x offset-y blur-radius color) */
+    filter: drop-shadow(1rem 1rem 0.01px #5B9279);
+}
+
 .graphic-design{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .graphic-design img{
-    height:100%;
+    height: 31.25rem; /*500px*/
     overflow: hidden;
+}
+.project-covers {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4";
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4.375rem; /*70px*/
+    
+}
+
+.project-covers img {
+    height: 37.5rem;
+}
+
+
+.img1 {
+    grid-area: img1;
+    text-align: right;
+}
+
+.img2 {
+    grid-area: img2;
+    text-align: left;
+}
+
+.img3 {
+    grid-area: img3;
+    text-align: right;
+}
+
+.img4 {
+    grid-area: img4;
+    text-align: left;
+}
+
+.contact_menu {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 50px;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 100px 50px 100px;
+    background-color: #5B9279;
+    color: #F0F7EE;
+}
+
+header {
+    padding: 50px 100px 50px 100px;
+}
+
+header ul{
+    list-style-type: none;
+    display: inline-flex;
+    gap: 50px;
+    margin: 0;
+}
+
+/* WHY ARE MY LINKS NOT CHANGING COLORS */
+a:link, visited, active, hover{
+    color: #393424;
+}
+
+.header-brand {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "image text";
+}
+
+
+.menu-text {
+    text-align: right;
+    grid-area: text;
+}
+
+.logo {
+    text-align: left;
+    grid-area: image;
 }
