@@ -20,6 +20,12 @@ body{
     font-size: 1rem; /*16px*/
 }
 
+main{
+    /*top right bottom left*/
+    padding: 0rem 6.25rem 18.75rem 6.25rem; /*0 100 300 100 */
+    line-height: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -134,6 +140,7 @@ header ul{
 /* WHY ARE MY LINKS NOT CHANGING COLORS */
 a:link, visited, active, hover{
     color: #393424;
+    text-decoration: none;
 }
 
 .header-brand {
@@ -153,4 +160,8 @@ a:link, visited, active, hover{
 .logo {
     text-align: left;
     grid-area: image;
+}
+
+.webtraffic img{
+    height: 31.25rem; /*500px*/
 }
