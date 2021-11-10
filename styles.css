@@ -22,11 +22,12 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color: #393424;
     font-size: 1rem; /*16px*/
+    /*max-width: 100rem;*/
 }
 
 main{
     /*top right bottom left*/
-    padding: 0rem 6.25rem 18.75rem 6.25rem; /*0 100 300 100 */
+    /*padding: 0rem 6.25rem 18.75rem 6.25rem; /*0 100 300 100 */
     line-height: 2rem;
 }
 
@@ -59,7 +60,7 @@ h3{
 .uxid ul{
     list-style-type: none;
     display:list-item;
-    font-size: 2.18rem; /*35px*/
+    font-size: 2rem; /*35px*/
     line-height: 3.5rem;
    /* margin: 0;*/
 }
@@ -77,7 +78,7 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .graphic-design img{
-    height: 31.25rem; /*500px*/
+    height: 25rem; /*500px*/
     overflow: hidden;
 }
 .project-covers {
@@ -104,7 +105,8 @@ h3{
 
 .img2 {
     grid-area: img2;
-    text-align: left;
+    text-align: left; /*look into why text align images*/
+    /*make images responsive in grid*/
 }
 
 .img3 {
@@ -120,27 +122,32 @@ h3{
 .contact_menu {
     list-style-type: none;
     display: inline-flex;
-    gap: 50px;
+    gap: 3.125rem; /*50px*/
     margin: 0;
 }
 
+/*notes: 
+fix footer width
+add gaps to graphic design section 
+*/
 footer {
     text-align: center;
-    width: 100vw;
-   padding: 50px 10px 50px 100px;
+    width: 100%;
+    padding: 3.125rem .16rem 3.125rem 6.25rem;
+
     background-color: #5B9279;
     color: #F0F7EE;
 }
 
 header {
-    padding: 50px 100px 50px 100px;
+    padding: 3.125rem 6.25rem 3.125rem 6.25rem;
     font-size:1.3rem;
 }
 
 header ul{
     list-style-type: none;
     display: inline-flex;
-    gap: 50px;
+    gap: 3.125rem;
     margin: 0;
 }
 
@@ -156,7 +163,7 @@ a:hover{
 .header-brand {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px;
+    grid-template-rows: 3.125rem;
     grid-template-areas: 
     "image text";
 }
