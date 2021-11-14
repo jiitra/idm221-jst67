@@ -8,6 +8,7 @@ try not to repeat code
 #62466B purple
 #EFA9AE pink
 
+DESIGN FOR MOBILE 
 
 rem calculation: desired px value / root px value 
 
@@ -17,6 +18,7 @@ rem calculation: desired px value / root px value
 *{
     box-sizing: border-box;
 }
+
 body{
     background-color: #F0F7EE;
     font-family: 'Courier New', Courier, monospace;
@@ -27,7 +29,7 @@ body{
 
 main{
     /*top right bottom left*/
-    /*padding: 0rem 6.25rem 18.75rem 6.25rem; /*0 100 300 100 */
+    padding: 0rem 1rem 2rem;
     line-height: 2rem;
 }
 
@@ -50,105 +52,94 @@ h3{
     font-size: 2.18rem; /*35px*/
     letter-spacing: .04rem;
 }
-.uxid{
-    display: grid;
-    grid-template-columns: fit-content(10%);
-    grid-template-columns: 1fr 1fr;
-    gap:4.375rem; /*70px*/
-    
-}
+
 .uxid ul{
     list-style-type: none;
+    text-align: left;
     display:list-item;
-    font-size: 2rem; /*35px*/
-    line-height: 3.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    
+    position:relative;
+    right: 3rem;
+
    /* margin: 0;*/
 }
 
 .uxid img{
-    width: 53.125rem; /*850px*/
+    max-width: 30rem;
+    width: 100%;
 }
+
 .uxid img:hover{
     /* ( offset-x offset-y blur-radius color) */
     filter: drop-shadow(1rem 1rem 0.01px #5B9279);
 }
 
-.graphic-design{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .graphic-design img{
-    height: 25rem; /*500px*/
-    overflow: hidden;
-}
-.project-covers {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img4";
-    margin-left: auto;
-    margin-right: auto;
-    gap: 4.375rem; /*70px*/
-    
+    max-width: 53.125rem; /*850px*/
+    width: 100%;
 }
 
 .project-covers img {
-    height: 37.5rem;
+    max-width: 53.125rem;
+    width: 100%;
 }
 
-
-.img1 {
-    grid-area: img1;
-    text-align: right;
+.column1{
+    display: block;
+    position: relative;
+    top:0;
+    left:0;
+    float:left;
 }
 
-.img2 {
-    grid-area: img2;
-    text-align: left; /*look into why text align images*/
-    /*make images responsive in grid*/
-}
+.column2{
+    max-width: 18.7rem;
+    width: 100%;
+    position: relative;
+    float:left;
 
-.img3 {
-    grid-area: img3;
-    text-align: right;
-}
-
-.img4 {
-    grid-area: img4;
-    text-align: left;
+    padding: 2rem;
+    /*background-color: white;*/
 }
 
 .contact_menu {
     list-style-type: none;
-    display: inline-flex;
-    gap: 3.125rem; /*50px*/
-    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    /*display: inline-flex;*/
+    /*gap: 3.125rem;*/ /*50px*/
+    margin: auto;
+    padding: 2rem;
 }
 
-/*notes: 
-fix footer width
-add gaps to graphic design section 
-*/
 footer {
     text-align: center;
     width: 100%;
-    padding: 3.125rem .16rem 3.125rem 6.25rem;
 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: auto;
+    padding-right: auto;
+
+    /*padding: 3.125rem 6.25rem 3.125rem 6.25rem;*/
     background-color: #5B9279;
     color: #F0F7EE;
 }
 
 header {
-    padding: 3.125rem 6.25rem 3.125rem 6.25rem;
+    padding: 3rem;
     font-size:1.3rem;
+    width: 100%;
+    /*background-color: aqua;*/
 }
 
 header ul{
-    list-style-type: none;
-    display: inline-flex;
-    gap: 3.125rem;
-    margin: 0;
+    list-style-type:none;
+    text-align: center;
+    margin:auto;
+    /*background-color: orange;*/
 }
 
 a:link, a:visited, a:active{
@@ -160,25 +151,18 @@ a:hover{
      color: #EFA9AE;
 }
 
-.header-brand {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3.125rem;
-    grid-template-areas: 
-    "image text";
+.logo img {
+   max-width: 6.25rem;
+   width: 100%;
 }
 
+.box {
+    margin: 1rem auto;
+    width: fit-content;
+    padding: 0;
+    position: relative; 
 
-.menu-text {
-    text-align: right;
-    grid-area: text;
-}
+    overflow: hidden;
 
-.logo {
-    text-align: left;
-    grid-area: image;
-}
-
-.webtraffic img{
-    height: 31.25rem; /*500px*/
+    /*background-color: green;*/
 }
