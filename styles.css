@@ -1,18 +1,4 @@
-/* 
-notes:
-try not to repeat code
 
-#F0F7EE background
-#393424 dark
-#5B9279 emerald green
-#62466B purple
-#EFA9AE pink
-
-DESIGN FOR MOBILE 
-
-rem calculation: desired px value / root px value 
-
-*/
 @import './fonts.css';
 
 *{
@@ -45,6 +31,7 @@ h6{
 }
 
 h2{
+    padding: 0rem;
     font-size: 3.125rem; /*50px*/
     line-height: 3.3rem;
 }
@@ -63,8 +50,6 @@ h3{
     
     position:relative;
     right: 2.5rem;
-
-   /* margin: 0;*/
 }
 
 .uxid img{
@@ -100,15 +85,12 @@ h3{
     width: 100%;
     position: relative;
     float:left;
-    /*background-color: white;*/
 }
 
 .contact_menu {
     list-style-type: none;
     text-align: center;
     font-size: 1rem;
-    /*display: inline-flex;*/
-    /*gap: 3.125rem;*/ /*50px*/
     margin: auto;
     padding: 2rem;
 }
@@ -122,17 +104,15 @@ footer {
     padding-left: auto;
     padding-right: auto;
 
-    /*padding: 3.125rem 6.25rem 3.125rem 6.25rem;*/
     background-color: #5B9279;
     color: #F0F7EE;
 }
 
 header {
-    padding: 3rem 2rem;
+    padding: 0.5rem 1rem 0.5rem;
     font-size:1rem;
     width: 100%;
     overflow: auto;
-    /*background-color: aqua;*/
 }
 
 header div{
@@ -143,8 +123,10 @@ header div{
 
 header ul li{
     list-style-type:none;
-    display: inline-block;
+    display: block;
     padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0.3rem;
     margin: auto;
 }
 
@@ -167,12 +149,10 @@ a:hover{
 }
 
 .box {
-    margin: 1rem auto;
+    margin: auto;
     width: fit-content;
     padding: 0;
     position: relative; 
 
     overflow: hidden;
-
-    /*background-color: green;*/
 }
