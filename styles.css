@@ -10,7 +10,6 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color: #393424;
     font-size: 1rem; /*16px*/
-    /*max-width: 100rem;*/
 }
 
 main{
@@ -101,8 +100,6 @@ footer {
 
     padding-top: 3rem;
     padding-bottom: 3rem;
-    padding-left: auto;
-    padding-right: auto;
 
     background-color: #5B9279;
     color: #F0F7EE;
